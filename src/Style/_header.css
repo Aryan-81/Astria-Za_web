@@ -36,8 +36,14 @@ header {
 
 .inner h1 {
   margin: 0;
-  font-size: 4em;
+  background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 10vh;
   line-height: 1.2em;
+  font-family:"Source Sans Pro", sans-serif;
+  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
 }
 
 .inner p {
@@ -57,6 +63,11 @@ nav.scrolled {
   background: rgba(17, 17, 17, 0.9);
 }
 
+nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
 nav ul {
   float: right;
   list-style: none;
@@ -66,18 +77,58 @@ nav ul {
 
 nav li {
   float: left;
+  display: block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
 }
 
 nav a {
   font-size: 2.5vh;
   color: #fff;
   text-decoration: none;
-  margin: 5px 0 0 20px;
+  position: relative;
+  text-decoration: none;
+  padding: .5em .8em;
   display: block;
 }
 
+nav a::before,
+nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #15b29d;
+  border-right: 3px solid #6affee;
+  transform: translate(-100%, 50%);
+}
+
+nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #15b29d;
+  border-left: 3px solid #6affee;
+  transform: translate(100%, -50%)
+}
+
+nav a:hover:before,
+nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
 nav a:hover {
-  color: #272727;
+  color: #15b29d;
 }
 
 .logo {
@@ -100,6 +151,8 @@ section {
   font-size: 1.2em;
   line-height: 1.6em;
   box-sizing: border-box;
+  background-color: #2727275d;
+
 }
 
 @keyframes fade-in {
@@ -108,5 +161,20 @@ section {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
   }
 }
