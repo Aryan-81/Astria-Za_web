@@ -1,11 +1,13 @@
 @import url(_cursor.css);
+@import url(_header.css);
 
 body {
     background-color: black;
+    background-image: url(../Media/original.jpg);
+    background-size: cover;
     height: 100vh;
-    display: flex;
     padding: 0;
     margin: 0;
-    justify-content: center;
-    align-items: center;
   }
+  
+ 
