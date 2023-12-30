@@ -9,5 +9,3 @@ function changeHeading(event) {
     // Update the h2 element with the clicked year
     document.getElementById('teamHeading').textContent = clickedYear;
   }
-
-
