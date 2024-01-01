@@ -1,6 +1,6 @@
 <div align="left">  <img src="https://github.com/Aryan-81/Astria-Za_web/assets/131597580/13b2b9b1-0a72-47e4-9045-495ee8f6e4a7"  style="height: 4em" />  </div>
 
-# College Astronomy Club Astria-Za Website
+# Astronomy Club Astria-Za Website
 
 Welcome to the collaborative development project for the College Astronomy Club website! This initiative aims to create a dynamic and interactive online platform that showcases the passion and curiosity of our astronomy enthusiasts. By building this website on GitHub, we invite fellow developers, designers, content creators, and astronomy enthusiasts to contribute their skills and ideas, making this a community-driven effort.
 
@@ -12,8 +12,8 @@ Welcome to the collaborative development project for the College Astronomy Club 
  - Establish a collaborative blog space
 
 ### - How to Contribute:
- - Fork the GitHub repository 
- - Join WhatsApp Group 
+ - Fork the GitHub repository and solve the issue or mention a issue or feature you want to add
+ - Join WhatsApp Group for more info
  - If any issue regarding this will arrise then you can ask whatsapp group
 
 
