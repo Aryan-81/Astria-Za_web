@@ -1,0 +1,13 @@
+#teamember {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.mcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+}

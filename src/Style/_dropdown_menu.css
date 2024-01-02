@@ -32,7 +32,7 @@
 }
 
 /* Mini reset, no margins, paddings or bullets */
-.menu,
+.yrmenu,
 .submenu {
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@
 }
 
 /* Main level */
-.menu {
+.yrmenu {
   margin: 1vh auto;
   width: 800px;
   width: -moz-fit-content;
@@ -48,14 +48,14 @@
   width: fit-content;	
 }
 
-.menu > li {
+.yrmenu > li {
   background: #34495e;
   float: left;
   position: relative;
   transform: skewX(15deg);
 }
 
-.menu a {
+.yrmenu a {
   display: block;
   color: #fff;
   text-transform: uppercase;
@@ -64,11 +64,11 @@
   font-size: 14px;
 }		
 
-.menu li:hover {
+.yrmenu li:hover {
   background: #54d8d8;
 }		
 
-.menu > li > a {
+.yrmenu > li > a {
   transform: skewX(-15deg);
   padding: 1em 2em;
 }
@@ -140,16 +140,16 @@
   transition: .2s ease transform;
 }
 
-.menu > li:hover .submenu,
-.menu > li:hover .submenu li {
+.yrmenu > li:hover .submenu,
+.yrmenu > li:hover .submenu li {
   opacity: 1;
   visibility: visible;
 }		
 
-.menu > li:hover .submenu li:nth-child(even){
+.yrmenu > li:hover .submenu li:nth-child(even){
   transform: skewX(25deg) translateX(15px);			
 }
 
-.menu > li:hover .submenu li:nth-child(odd){
+.yrmenu > li:hover .submenu li:nth-child(odd){
   transform: skewX(-25deg) translateX(-15px);			
 }

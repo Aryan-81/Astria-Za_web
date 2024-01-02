@@ -1,112 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/_dropdown_menu.css">
-    <link rel="stylesheet" href="Style/__main__.css">
-    <link rel="stylesheet" href="Style/_memberPic.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="JavaScript/header.js" defer></script>
-    <script src="JavaScript/cursor.js" defer></script>
-    <script src="JavaScript/display_team.js"></script>
-    <title>Astria-Za</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style/_dropdown_menu.css">
+  <link rel="stylesheet" href="Style/__main__.css">
+  <link rel="stylesheet" href="Style/_memberPic.css">
+  <link rel="stylesheet" href="Style/_teamStyle.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="JavaScript/header.js" defer></script>
+  <script src="JavaScript/cursor.js" defer></script>
+  <script src="JavaScript/display_team.js"></script>
+  <title>Astria-Za</title>
 </head>
+
 <body>
-    <div class="cursor"></div>
-    <nav>
-        <a href="../index.html"><div class="logo"><img src="Media/logo.png"/></div></a>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallary.html">Gallary</a></li>
-            <li><a href="team.html">Team</a></li>
-        </ul>
-    </nav>
+  <div class="cursor"></div>
+  <nav>
+    <a href="../index.html"><div class="logo"><img src="src/Media/logo.png"/></div></a>
 
-    <header>
-        <div class="headline" style="height: 40vh;">
-            <div class="inner">
-                <h1>Team Member</h1>
-                <p> A Stellar Journey With Our Astronomy Club Team.</p>
-            </div>
-        </div>
-    </header>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+    </label>
+  
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallary.html">Gallary</a></li>
+      <li><a href="team.html">Team</a></li>
+  </ul>
+</nav>
 
-    <section id="home">
-        <p>Our Astronomy Club team, a constellation of diverse talents and interests, has illuminated the night sky with enthusiasm and knowledge. Like the infinite stars above, each member contributes a unique brilliance that, when combined, forms a celestial tapestry of collaboration and shared discovery.</p>
-        <p>The collaborative spirit that defines our team is not confined to a single year but extends into the vast expanse of the foreseeable future. Together, we anticipate a journey marked by continued growth, shared excitement, and the expansion of our collective knowledge about the mysteries of the universe.</p>
-        <p>Here, every year unfolds as a celestial adventure, brimming with shared discoveries and the boundless possibilities that lie ahead!</p>
-    </section>
-    <section class ="yearheading">
-       <div id="year"><h2>2023-24 Team</h2></div>
-       <div id="year_list"><ul class="menu cf">
+  <header>
+    <div class="headline" style="height: 40vh;">
+      <div class="inner">
+        <h1>Team Member</h1>
+        <p> A Stellar Journey With Our Astronomy Club Team.</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="home">
+    <p>Our Astronomy Club team, a constellation of diverse talents and interests, has illuminated the night sky with
+      enthusiasm and knowledge. Like the infinite stars above, each member contributes a unique brilliance that, when
+      combined, forms a celestial tapestry of collaboration and shared discovery.</p>
+    <p>The collaborative spirit that defines our team is not confined to a single year but extends into the vast expanse
+      of the foreseeable future. Together, we anticipate a journey marked by continued growth, shared excitement, and
+      the expansion of our collective knowledge about the mysteries of the universe.</p>
+    <p>Here, every year unfolds as a celestial adventure, brimming with shared discoveries and the boundless
+      possibilities that lie ahead!</p>
+  </section>
+  <section class="yearheading">
+    <div id="year">
+      <h2>2023-24 Team</h2>
+    </div>
+    <div id="year_list">
+      <ul class="yrmenu cf">
         <li>
-          <a >Year</a>
+          <a>Year</a>
           <ul class="submenu">
             <li><a href="#">2023-24</a></li>
             <li><a href="#">2022-23</a></li>
             <li><a href="#">2021-22</a></li>
             <li><a href="#">2020-21</a></li>
-          </ul>			
+          </ul>
         </li>
-      </ul></div>
-       
-    </section>
-    <section>
-        <div>
-            <h2>Club Adviser</h2>
+      </ul>
+    </div>
+
+  </section>
+  <section id='teamember'>
+
+    <div class="mcontainer">
+      <div id="adviser">
+        <h2>Club Adviser</h2>
         <div class="box">
-            <div class="content">
-              <img src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-0.3.5&s=c20042d58b121e90f8b8de83253de4cb&auto=format&fit=crop&w=500&q=60" alt="Image">
-              <h2> Name <br><span> position </span></h2>
-              <a href="2022ucs0081@iitjammu.ac.in">email</a>
-            </div>
+          <div class="content">
+            <img
+              src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-0.3.5&s=c20042d58b121e90f8b8de83253de4cb&auto=format&fit=crop&w=500&q=60"
+              alt="Image">
+            <h2> Name <br><span> position </span></h2>
+            <a href="2022ucs0081@iitjammu.ac.in">email</a>
           </div>
         </div>
-        <div>
-            <h2>Club Coordinator</h2>
+      </div>
+      <div id="cooredinator">
+        <h2>Club Coordinator</h2>
         <div class="box">
-            <div class="content">
-              <img src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-0.3.5&s=c20042d58b121e90f8b8de83253de4cb&auto=format&fit=crop&w=500&q=60" alt="Image">
-              <h2> Name <br><span> position </span></h2>
-              <a href="2022ucs0081@iitjammu.ac.in">email</a>
-            </div>
+          <div class="content">
+            <img
+              src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-0.3.5&s=c20042d58b121e90f8b8de83253de4cb&auto=format&fit=crop&w=500&q=60"
+              alt="Image">
+            <h2> Name <br><span> position </span></h2>
+            <a href="2022ucs0081@iitjammu.ac.in">email</a>
           </div>
         </div>
-        <div>
-            <h2>mangment team</h2>
+      </div>
+    </div>
+
+
+
+    <div class="mcontainer">
+      <div id="other">
+        <h2>Web Team</h2>
         <div class="box">
-            <div class="content">
-              <img src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-0.3.5&s=c20042d58b121e90f8b8de83253de4cb&auto=format&fit=crop&w=500&q=60" alt="Image">
-              <h2> Name <br><span> position </span></h2>
-              <a href="2022ucs0081@iitjammu.ac.in">email</a>
-            </div>
+          <div class="content">
+            <img
+              src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-0.3.5&s=c20042d58b121e90f8b8de83253de4cb&auto=format&fit=crop&w=500&q=60"
+              alt="Image">
+            <h2> Name <br><span> position </span></h2>
+            <a href="2022ucs0081@iitjammu.ac.in">email</a>
           </div>
-        </div>
-        <div>
-            <h2>design team</h2>
-        <div class="box">
-            <div class="content">
-              <img src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-0.3.5&s=c20042d58b121e90f8b8de83253de4cb&auto=format&fit=crop&w=500&q=60" alt="Image">
-              <h2> Name <br><span> position </span></h2>
-              <a href="2022ucs0081@iitjammu.ac.in">email</a>
-            </div>
-          </div>
-        </div>
-        <div>
-            <h2>web dev team</h2>
-        <div class="box">
-            <div class="content">
-              <img src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-0.3.5&s=c20042d58b121e90f8b8de83253de4cb&auto=format&fit=crop&w=500&q=60" alt="Image">
-              <h2> Name <br><span> position </span></h2>
-              <a href="2022ucs0081@iitjammu.ac.in">email</a>
-            </div>
-          </div>
+          
         </div>
         
-    </section>
+      </div>
+    </div>
     
+  </section>
+
 </body>
 
 </html>
