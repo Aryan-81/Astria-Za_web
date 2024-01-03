@@ -31,7 +31,7 @@ header {
   top: 50%;
   left: 50%;
   opacity: 0;
-  z-index: 10;
+  z-index: 9;
   transform: translateX(-50%) translateY(-50%);
   animation: fade-in 0.75s 0.25s ease-in forwards;
 }
@@ -39,7 +39,7 @@ header {
 /* Heading Styles */
 .inner h1 {
   margin: 0;
-  background: radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -88,7 +88,7 @@ nav ul {
 nav li {
   float: left;
   display: block;
-  list-style: none;
+  list-style: outside none none;
   margin: .5em 1em;
   padding: 0;
 }
@@ -98,6 +98,7 @@ nav a {
   color: #fff;
   text-decoration: none;
   position: relative;
+  text-decoration: none;
   padding: .5em .8em;
   display: block;
 }
@@ -114,6 +115,7 @@ nav a::after {
 }
 
 nav a::before {
+  content:' ';
   right: 0;
   top: 0;
   border-top: 3px solid #15b29d;
@@ -122,6 +124,7 @@ nav a::before {
 }
 
 nav a:after {
+  content: '';
   left: 0;
   bottom: 0;
   border-bottom: 3px solid #15b29d;
