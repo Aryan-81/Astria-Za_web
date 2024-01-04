@@ -1,5 +1,6 @@
 /* @import url(_cursor.css); */
 @import url(_header.css);
+@import url(_footer.css);
 
 body {
   position: relative;

@@ -1,0 +1,59 @@
+@import url(_aurora-effect.css);
+
+footer{
+    background-color: black;
+    width: 100%;
+	height: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+	position: relative;
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+    color: white;
+
+}
+#follow{
+    font-size: 4vh;
+    margin: 0%;
+}
+
+.footer-col{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    border: 1px solid #ffffff;
+    width: 100%;
+    
+}
+
+.social-media{
+    display:flex;
+    width: 80%;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.icon{
+    height: 5vh;
+    margin: 3vh;
+    
+}
+
+
+.footer-copyright-text{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(26, 27, 27) ;
+    
+}
+
+.footer-copyright-link{
+    margin: 3vh;
+    color: #ffffff;
+}
