@@ -144,8 +144,11 @@ nav a:hover {
 
 /* Logo Styles */
 .logo {
-  height: 75px;
-  float: left;
+  height: 120px;
+  float: center;
+  border-radius: 15% 0% 15% 0%;
+  /* border-bottom-right-radius: 15%;
+  border-top-left-radius: 15%; */
 }
 
 .logo img {
