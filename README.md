@@ -24,7 +24,7 @@ Welcome to the collaborative development project for the College Astronomy Club 
  - Bug fixes and optimization
 
 ### Acknowledgments:
- - We appreciate the valuable contributions from our community members. All contributors will be acknowledged on the website, showcasing the collective effort that went into building this platform.
+ - We appreciate the valuable contributions from our community members. All contributors will be acknowledged on the website, showcasing the collective effort that went into building this platform. You can also showcase your contribution in your Resume.
 
 Join us in exploring the wonders of the cosmos and making astronomy accessible to all through this exciting collaborative venture!
 
