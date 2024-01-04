@@ -8,6 +8,7 @@
     transform: rotate(360deg);
   }
 }
+
 .box {
   position: relative;
   width: 150px;
@@ -16,6 +17,7 @@
   border-radius: 50%;
   overflow: hidden;
 }
+
 
 .box::before {
   content: '';

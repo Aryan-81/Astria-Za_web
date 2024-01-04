@@ -42,7 +42,7 @@ hr{
 .icon{
     height: 5vh;
     margin: 3vh;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 .icon:hover{
     height: 7vh;
