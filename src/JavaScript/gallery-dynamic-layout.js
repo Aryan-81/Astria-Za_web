@@ -1,0 +1,133 @@
+// script.js
+
+// Function to create the grid with cards
+function createGrid() {
+    var gridSection = document.getElementById('gridSection');
+  
+    for (var i = 0; i < 3; i++) {
+        var gridRow = document.createElement('div');
+        gridRow.className = 'Grid-row';
+  
+        for (var j = 0; j < 3; j++) {
+            var id = i * 3 + j + 1;
+  
+            var card = document.createElement('div');
+            card.className = 'Card';
+  
+            // card.id = 'card-' + id;
+            // card.onclick = function() {openGallery(id);};
+            card.setAttribute('onClick', 'openGallery(' + id + ')');
+            card.setAttribute('id', 'card-' + id);
+  
+            var cardThumb = document.createElement('div');
+            cardThumb.className = 'Card-thumb';
+  
+            for (var k = 0; k < 3; k++) {
+                var cardShadow = document.createElement('div');
+                cardShadow.className = 'Card-shadow';
+                cardThumb.appendChild(cardShadow);
+            }
+  
+            var cardImage = document.createElement('div');
+            cardImage.className = 'Card-image';
+            cardImage.style.backgroundImage = 'url(https://robohash.org/' + id + ')';
+            cardThumb.appendChild(cardImage);
+  
+            var cardTitle = document.createElement('div');
+            cardTitle.className = 'Card-title';
+            cardTitle.innerHTML = '<span>Super interesting card</span>';
+            card.appendChild(cardTitle);
+  
+            var cardExplore = document.createElement('div');
+            cardExplore.className = 'Card-explore';
+            cardExplore.innerHTML = '<span>Explore 50 more</span>';
+            card.appendChild(cardExplore);
+  
+            var cardButton = document.createElement('button');
+            cardButton.className = 'Card-button view more';
+            cardButton.innerHTML = 'View More';
+            card.appendChild(cardButton);
+  
+            card.appendChild(cardThumb);
+            gridRow.appendChild(card);
+        }
+  
+        gridSection.appendChild(gridRow);
+    }
+  }
+  
+  // Call the function to create the grid
+  createGrid();
+  
+
+// script.js
+
+// Function to create the gallery sections
+function createGallerySections() {
+    var mainContainer = document.getElementById('gallerysubsection');
+
+    for (var i = 1; i <= 9; i++) {
+        var gallerySection = document.createElement('section');
+        gallerySection.className = 'Gallery';
+        gallerySection.id = 'gallery-' + i;
+
+        // Gallery header
+        var galleryHeader = document.createElement('div');
+        galleryHeader.className = 'Gallery-header';
+
+        var closeLink = document.createElement('a');
+        closeLink.className = 'Gallery-close';
+        closeLink.setAttribute('onclick', 'closeAll()');
+        closeLink.innerText = '×';
+
+        galleryHeader.appendChild(closeLink);
+        gallerySection.appendChild(galleryHeader);
+
+        // Gallery images
+        var galleryImages = document.createElement('div');
+        galleryImages.className = 'Gallery-images';
+
+        // Gallery left
+        var galleryLeft = document.createElement('div');
+        galleryLeft.className = 'Gallery-left';
+        // Repeat for 2 secondary images
+        for (var j = 1; j <= 2; j++) {
+            var galleryImage = document.createElement('div');
+            galleryImage.className = 'Gallery-image';
+            galleryLeft.appendChild(galleryImage);
+        }
+        gallerySection.appendChild(galleryImages);
+
+        // Gallery image (primary)
+        var galleryImagePrimary = document.createElement('div');
+        galleryImagePrimary.className = 'Gallery-image Gallery-image--primary';
+        galleryImagePrimary.style.backgroundImage = 'url(https://robohash.org/' + i + ')';
+        galleryImages.appendChild(galleryImagePrimary);
+        galleryImages.appendChild(galleryLeft);
+
+
+        // Repeat for 3 additional image sets
+        for (var j = 1; j <= 3; j++) {
+            var galleryImageSet = document.createElement('div');
+            galleryImageSet.className = 'Gallery-images';
+
+            for (var k = 1; k <= 3; k++) {
+                var galleryImage = document.createElement('div');
+                galleryImage.className = 'Gallery-image';
+                galleryImageSet.appendChild(galleryImage);
+            }
+
+            gallerySection.appendChild(galleryImageSet);
+        }
+
+        
+
+        mainContainer.appendChild(gallerySection);
+    }
+}
+createGallerySections();
+
+
+
+  
+  

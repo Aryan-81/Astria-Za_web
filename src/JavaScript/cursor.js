@@ -8,6 +8,7 @@ document.addEventListener("mousemove", (event) => {
     const y = event.pageY;
 
     // Update the cursor position
+    
     cursor.style.top = y + "px";
     cursor.style.left = x + "px";
     cursor.style.display = "block";

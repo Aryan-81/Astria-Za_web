@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/__main__.css">
-    <link rel="stylesheet" href="Style/_gallary.css">
+    <link rel="stylesheet" href="Style/_subgallery.css">
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="JavaScript/header.js" defer></script>
-    <script src="JavaScript/cursor.js" defer></script>
+    <script src="JavaScript/gallery-layout-funtion.js" defer></script>
     <title>Astria-Za</title>
 </head>
 
@@ -17,7 +17,7 @@
     <div class="cursor"></div>
     <nav>
         <a href="../index.html">
-            <div class="logo"><img src="Media/logo.png" /></div>
+            <div ><img class="logo" src="Media/logo.png" /></div>
         </a>
 
         <input id="menu-toggle" type="checkbox" />
@@ -53,28 +53,10 @@
             vitae.</p>
     </section >
     
-    <section class="gallery">
-        <div class="image">
-            <img src="Media/moon.gif" alt="Image 1">
-        </div>
-        <div class="image">
-            <img src="Media/moon.gif" alt="Image 2">
-        </div>
-        <div class="image">
-            <img src="Media/moon.gif" alt="Image 3">
-        </div>
-        <div class="image">
-            <img src="Media/moon.gif" alt="Image 1">
-        </div>
-        <div class="image">
-            <img src="Media/moon.gif" alt="Image 2">
-        </div>
-        <div class="image">
-            <img src="Media/moon.gif" alt="Image 3">
-        </div>
-    </section>
-
-
+    <section id = 'gallerysubsection'>
+        <div class="Grid" id="gridSection"></div>
+      <script src='JavaScript/gallery-dynamic-layout.js'></script>
+      </section>
 
     <footer>
 
