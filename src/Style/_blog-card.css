@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    width: 40vh;
+    min-width: 20vh;
+    height: 60vh;
+    margin: 20px;
+    color: #bfd2d4;
+    background: linear-gradient(to left, #181717, #000000);
+    border-radius: 2vh;
+    overflow: hidden;
+    transition: all 200ms ease-in-out;
+}
+
+.img-container {
+    height: 70%;
+    /* Adjust as needed */
+    background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);
+    background-size: cover;
+    background-position: center;
+    transition: all 500ms ease-in-out;
+}
+
+.card-info {
+    position: relative;
+    flex-grow: 1;
+    /* Take up remaining space in the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+    transition: all 200ms ease-in-out;
+
+}
+
+.user-profile {
+    display: flex;
+    background-color: #35343483;
+    border-radius: 5vh;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-user-profile {
+    width: 20px;
+    height: 20px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #0effcf;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card:hover .card-info>*:nth-child(4),
+.card:hover .card-info>*:nth-child(3) {
+    display: none;
+}
+
+.card:hover .card-info {
+    bottom: 30%;
+
+}
+
+.card:hover .img-container {
+    height: 100%;
+    filter: opacity(50%);
+}

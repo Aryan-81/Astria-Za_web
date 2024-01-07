@@ -144,7 +144,7 @@ nav a:hover {
 
 /* Logo Styles */
 .logo {
-  height: 120px;
+  height: 70px;
   float: center;
   border-radius: 15% 0% 15% 0%;
   /* border-bottom-right-radius: 15%;
@@ -162,7 +162,7 @@ section {
   margin: 25px auto;
   padding: 20px;
   color: #ffffff;
-  max-width: 800px;
+  max-width: 90%;
   font-size: 1.2em;
   line-height: 1.6em;
   box-sizing: border-box;
