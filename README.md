@@ -24,11 +24,11 @@ Welcome to the collaborative development project for the College Astronomy Club 
  - Bug fixes and optimization
 
 ### Acknowledgments:
- - We appreciate the valuable contributions from our community members. All contributors will be acknowledged on the website, showcasing the collective effort that went into building this platform. You can also showcase your contribution in your Resume.
-
+ - We appreciate the valuable contributions from our community members. All contributors will be acknowledged on the website, showcasing the collective effort that went into building this platform. 
 Join us in exploring the wonders of the cosmos and making astronomy accessible to all through this exciting collaborative venture!
 
 ## 💻 Tech Required :  
+- We only using basic stack because to make this beginner friendly so any one who have only knowledge of html, css and javascript can also contribute.
 <div align="center" >
   <img src="https://img.shields.io/badge/JavaScript-000000.svg?style=for-the-badge&logo=javascript&logoColor=F7E017" style="height: 3em">
   <img src="https://img.shields.io/badge/HTML5-F26624.svg?style=for-the-badge&logo=html5&logoColor=white" style="height: 3em">
