@@ -33,7 +33,6 @@ Join us in exploring the wonders of the cosmos and making astronomy accessible t
   <img src="https://img.shields.io/badge/JavaScript-000000.svg?style=for-the-badge&logo=javascript&logoColor=F7E017" style="height: 3em">
   <img src="https://img.shields.io/badge/HTML5-F26624.svg?style=for-the-badge&logo=html5&logoColor=white" style="height: 3em">
   <img src="https://img.shields.io/badge/CSS-2465F1.svg?style=for-the-badge&logo=CSS3&logoColor=white" style="height: 3em">
-  <img src="https://img.shields.io/badge/MySQL-%23000000?style=for-the-badge&logo=MySQL&logoColor=e48e00" style="height: 3em">
   <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" style="height: 3em">
   <img src="https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" style="height: 3em">
 </div>
