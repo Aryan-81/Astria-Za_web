@@ -4,16 +4,17 @@
 function createGrid() {
     var gridSection = document.getElementById('gridSection');
   
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 1; i++) {
         var gridRow = document.createElement('div');
-        gridRow.className = 'Grid-row';
+        gridRow.className = 'Grid';
+
   
-        for (var j = 0; j < 3; j++) {
-            var id = i * 3 + j + 1;
-  
+        for (var j = 0; j < 9; j++) {
+            var id =  j + 1;
+
             var card = document.createElement('div');
             card.className = 'Card';
-  
+
             // card.id = 'card-' + id;
             // card.onclick = function() {openGallery(id);};
             card.setAttribute('onClick', 'openGallery(' + id + ')');
