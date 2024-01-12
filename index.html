@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/Style/__main__.css">
     <link rel="stylesheet" href="src/Style/_blog-card.css">
+    <link rel="stylesheet" href="src/Style/_swip.css">
     <link rel="stylesheet" href="src/Style/_sibling-gallery.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="src/JavaScript/header.js" defer></script>
-
+    <script src="src/JavaScript/swiper.js" defer></script>
 
     <title>Astria-Za</title>
 </head>
@@ -37,34 +38,42 @@
         <div class="headline" style="height: 100vh;">
             <div class="inner">
                 <h1>Astria-Za</h1>
-                <p>Scroll down the page</p>
+                
+                <h3>Welcome to IIT Jammu Astronomy Club! 🌌</h2>
+                <p>Discover the cosmos with us! Whether you're a seasoned stargazer or a cosmic novice, our club is your launchpad into the 
+            wonders of the universe. Explore events, resources, and join our celestial community. Ready for an astronomical adventure? 
+            Let's gaze at the stars together!</p>
             </div>
         </div>
     </header>
 
-    <section id="home">
-        <h2>Lorem ipsum</h2>
-        <p>Seed lectus mi, eleifend quis congue non, lacinia id quam Sed lectus mi, eleifend quis congue non, lacinia id
-            quam. Cras porta pellentesque nulla, ac auctor ligula scelerisque non. In vel placerat lacus. Nam pretium
-            vitae purus et laored quis congue non, lacinia id quam. Cras porta pellentesque nulla, ac
-            auctor ligula scelerisque non. In vel placerat lacus. Nam pretium vitae purus et laoreet. Aliquam erat
-            volutpat. Pellentesque id volutpat sem, et condimentum nisl. Donec bibendum congue mauris, ac commodo tortor
-            volutpat ac. Donec lobortis lorem nisi, sit amet bibendum lacus vestibullaoreet. Aliquam erat volutpat.
-            Pellentesque id volutpat sem, et condimentum nisl. Donec bibendum congue mauris, ac commodo tortor volutpat
-            ac. Donec lobortis lorem nisi, sit amet bibendum lacus vestibulum interdum. Donec mollis ligula at semper
-            iaculis.</p>
-
-        <h2>Nulla vitae lacus</h2>
-        <p>ed lected lectusla, ac auctor ligula scelerisque non.
-            In vel placerat lacus. Nam pretium vitae purus et laoreet. Aliquam erat volutpat. Pellentesque id volutpat
-            sem, et condimentum nisl. Donec bibendum congue mauris, ac commodo tortor volutpat ac. Donec lobortis lorem
-            nisi, sit amet bibendum lacus vestibul Aliquam erat volutpat. Pellentesque id volutpat sem, et condimented
-            lectus mi, eleifend quis congue non, lacinia id quam Sed lectus mi, eleifend quis congue non, lacinia id
-            quam. Cras porta pellentesque nulla, ac auctor ligula scelerisque non. In vel placerat lacus. Nam pretium
-            vitae purus et laoreet. Aliquam erat volutpat. Pellentesque id volutpat sem, et condimentum nisl. Donec
-            bibendum congue mauris, ac cPellentesque id volutpat sem, et condimentum nisl.
-            Donec bibendum congue mauris, ac commodo tortor volutpat ac. Donec lobortis lorem nisi, sit amet bibendum
-            lacus vestibulum interdum. Donec mollis ligula at semper iaculis... (Your Nulla vitae lacus content)</p>
+    <section >
+        <h2>Upcomming Events & Announcements</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <h2>Card 1</h2>
+                  <p>This is the content of Card 1.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <h2>Card 2</h2>
+                  <p>This is the content of Card 2.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <h2>Card 3</h2>
+                  <p>This is the content of Card 3.</p>
+                </div>
+              </div>
+              <!-- Add more cards as needed -->
+            </div>
+          </div>
+          <button onclick="prevSlide()"><</button>
+          <button onclick="nextSlide()">></button>
     </section>
 
     <section class="blogs" >
