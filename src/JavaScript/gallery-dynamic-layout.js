@@ -67,7 +67,7 @@ function createGrid() {
 function createGallerySections() {
     var mainContainer = document.getElementById('gallerysubsection');
 
-    for (var i = 1; i <= 8; i++) {
+    for (var i = 1; i <= 9; i++) {
         var gallerySection = document.createElement('section');
         gallerySection.className = 'Gallery';
         gallerySection.id = 'gallery-' + i;
@@ -85,42 +85,30 @@ function createGallerySections() {
         gallerySection.appendChild(galleryHeader);
 
         // Gallery images
-        var galleryImages = document.createElement('div');
-        galleryImages.className = 'Gallery-images';
-
-        // Gallery left
-        var galleryLeft = document.createElement('div');
-        galleryLeft.className = 'Gallery-left';
-        // Repeat for 2 secondary images
-        for (var j = 1; j <= 2; j++) {
-            var galleryImage = document.createElement('div');
-            galleryImage.className = 'Gallery-image';
-            galleryLeft.appendChild(galleryImage);
-        }
-        gallerySection.appendChild(galleryImages);
-
+        var primaryImage = document.createElement('div');
+        primaryImage.className = 'Gallery-image-primary';
+        gallerySection.appendChild(primaryImage);
         // Gallery image (primary)
         var galleryImagePrimary = document.createElement('div');
-        galleryImagePrimary.className = 'Gallery-image Gallery-image--primary';
+        galleryImagePrimary.className = 'Gallery-image--primary';
         galleryImagePrimary.style.backgroundImage = 'url(https://robohash.org/' + i + ')';
-        galleryImages.appendChild(galleryImagePrimary);
-        galleryImages.appendChild(galleryLeft);
+        primaryImage.appendChild(galleryImagePrimary);
+        // Gallery description
+        var description = document.createElement('div');
+        description.className = 'Gallery-discription';
+        description.textContent = 'Description';
+        primaryImage.appendChild(description);
+        
+        // Repeat for 9 additional images
+        var galleryImageSet = document.createElement('div');
+        galleryImageSet.className = 'Gallery-images';
 
-
-        // Repeat for 3 additional image sets
-        for (var j = 1; j <= 3; j++) {
-            var galleryImageSet = document.createElement('div');
-            galleryImageSet.className = 'Gallery-images';
-
-            for (var k = 1; k <= 3; k++) {
-                var galleryImage = document.createElement('div');
-                galleryImage.className = 'Gallery-image';
-                galleryImageSet.appendChild(galleryImage);
-            }
-
-            gallerySection.appendChild(galleryImageSet);
+        for (var k = 1; k <= 9; k++) {
+            var galleryImage = document.createElement('div');                galleryImage.className = 'Gallery-image';
+            galleryImageSet.appendChild(galleryImage);
         }
 
+        gallerySection.appendChild(galleryImageSet);
         
 
         mainContainer.appendChild(gallerySection);
