@@ -4,221 +4,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External stylesheets -->
     <link rel="stylesheet" href="src/Style/__main__.css">
     <link rel="stylesheet" href="src/Style/_blog-card.css">
     <link rel="stylesheet" href="src/Style/_swip.css">
     <link rel="stylesheet" href="src/Style/_sibling-gallery.css">
+
+    <!-- jQuery library for scripting -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Deferred scripts  -->
     <script src="src/JavaScript/header.js" defer></script>
     <script src="src/JavaScript/swiper.js" defer></script>
 
+    <!-- Page title -->
     <title>Astria-Za</title>
 </head>
 
 <body>
+    <!-- Navigation section -->
     <nav>
+        <!-- Logo with a link to the home page -->
         <a href="index.html">
             <div><img class="logo" src="src/Media/logo.png" /></div>
         </a>
 
+        <!-- Toggle button for mobile menu -->
         <input id="menu-toggle" type="checkbox" />
         <label class='menu-button-container' for="menu-toggle">
             <div class='menu-button'></div>
         </label>
 
+        <!-- Navigation menu items -->
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="src/about.html">About</a></li>
-            <li><a href="src/gallary.html">Gallary</a></li>
+            <li><a href="src/gallary.html">Gallery</a></li>
             <li><a href="src/team.html">Team</a></li>
         </ul>
     </nav>
 
+    <!-- Header section with club introduction -->
     <header>
         <div class="headline" style="height: 100vh;">
             <div class="inner">
                 <h1>Astria-Za</h1>
-                
-                <h3>Welcome to IIT Jammu Astronomy Club! 🌌</h2>
-                <p>Discover the cosmos with us! Whether you're a seasoned stargazer or a cosmic novice, our club is your launchpad into the 
-            wonders of the universe. Explore events, resources, and join our celestial community. Ready for an astronomical adventure? 
-            Let's gaze at the stars together!</p>
+                <h3>Welcome to IIT Jammu Astronomy Club! 🌌</h3>
+                <p>Discover the cosmos with us! Whether you're a seasoned stargazer or a cosmic novice, our club is your
+                    launchpad into the wonders of the universe. Explore events, resources, and join our celestial
+                    community. Ready for an astronomical adventure? Let's gaze at the stars together!</p>
             </div>
         </div>
     </header>
 
-    <section >
-        <h2>Upcomming Events & Announcements</h2>
+    <!-- Section for upcoming events and announcements -->
+    <section class="page-section">
+        <h2>Upcoming Events & Announcements</h2>
+        <!-- Swiper container for event cards -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card">
-                  <h2>Card 1</h2>
-                  <p>This is the content of Card 1.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <h2>Card 2</h2>
-                  <p>This is the content of Card 2.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <h2>Card 3</h2>
-                  <p>This is the content of Card 3.</p>
-                </div>
-              </div>
-              <!-- Add more cards as needed -->
-            </div>
-          </div>
-          <button onclick="prevSlide()"><</button>
-          <button onclick="nextSlide()">></button>
-    </section>
-
-    <section class="blogs" >
-        <h2>Blog</h2>
-        <div class="container">
-            <div class="card">
-                <div class="img-container"></div>
-                <div class="card-info">
-                    <div>
-                        <div class="card-info-type"></div>
-                        <div class="card-date"></div>
-                    </div>
-                    <h3 style="margin: 0%;">Lorem</h3>
-                    <h6 style="margin: 0%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
-                    <div class="user-profile">
-                        <div class="card-user-profile"
-                            style="background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);"></div>
-                        <h5 style="margin:10px;">by lorem</h5>
+                <!-- Swiper slides with event cards -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2>Card 1</h2>
+                        <p>This is the content of Card 1.</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="card">
-                <div class="img-container"></div>
-                <div class="card-info">
-                    <div>
-                        <div class="card-info-type"></div>
-                        <div class="card-date"></div>
-                    </div>
-                    <h3 style="margin: 0%;">Lorem</h3>
-                    <h6 style="margin: 0%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
-                    <div class="user-profile">
-                        <div class="card-user-profile"
-                            style="background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);"></div>
-                        <h5 style="margin:10px;">by lorem</h5>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2>Card 2</h2>
+                        <p>This is the content of Card 2.</p>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="img-container"></div>
-                <div class="card-info">
-                    <div>
-                        <div class="card-info-type"></div>
-                        <div class="card-date"></div>
-                    </div>
-                    <h3 style="margin: 0%;">Lorem</h3>
-                    <h6 style="margin: 0%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
-                    <div class="user-profile">
-                        <div class="card-user-profile"
-                            style="background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);"></div>
-                        <h5 style="margin:10px;">by lorem</h5>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2>Card 3</h2>
+                        <p>This is the content of Card 3.</p>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="img-container"></div>
-                <div class="card-info">
-                    <div>
-                        <div class="card-info-type"></div>
-                        <div class="card-date"></div>
-                    </div>
-                    <h3 style="margin: 0%;">Lorem</h3>
-                    <h6 style="margin: 0%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
-                    <div class="user-profile">
-                        <div class="card-user-profile"
-                            style="background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);"></div>
-                        <h5 style="margin:10px;">by lorem</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-container"></div>
-                <div class="card-info">
-                    <div>
-                        <div class="card-info-type"></div>
-                        <div class="card-date"></div>
-                    </div>
-                    <h3 style="margin: 0%;">Lorem</h3>
-                    <h6 style="margin: 0%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
-                    <div class="user-profile">
-                        <div class="card-user-profile"
-                            style="background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);"></div>
-                        <h5 style="margin:10px;">by lorem</h5>
-                    </div>
-                </div>
+                <!-- Add more cards as needed -->
             </div>
         </div>
-        
-
-        <!-- Add more cards as needed -->
-
+        <!-- Navigation buttons for Swiper -->
+        <div class="swiper-button">
+            <button onclick="prevSlide()"> << </button>
+            <button onclick="nextSlide()"> >> </button>
+        </div>
     </section>
 
+    <!-- Section for blog cards -->
+    <section class="blogs page-section">
+        <h2>Blog</h2>
+        <!-- Container for blog cards -->
+        <div class="container">
+            <!-- Individual blog cards with content -->
+            <div class="card">
+                <!-- Image container and card information -->
+                <div class="img-container"></div>
+                <div class="card-info">
+                    <!-- Type, date, title, and content -->
+                    <div>
+                        <div class="card-info-type"></div>
+                        <div class="card-date"></div>
+                    </div>
+                    <h3 style="margin: 0%;">Lorem</h3>
+                    <h6 style="margin: 0%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+                    <!-- User profile with image and name -->
+                    <div class="user-profile">
+                        <div class="card-user-profile"
+                            style="background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);"></div>
+                        <h5 style="margin:10px;">by lorem</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- duplicate cards  -->
+            <div class="card">
+                <div class="img-container"></div>
+                <div class="card-info">
+                    <div>
+                        <div class="card-info-type"></div>
+                        <div class="card-date"></div>
+                    </div>
+                    <h3 style="margin: 0%;">Lorem</h3>
+                    <h6 style="margin: 0%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+                    <div class="user-profile">
+                        <div class="card-user-profile"
+                            style="background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);"></div>
+                        <h5 style="margin:10px;">by lorem</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container"></div>
+                <div class="card-info">
+                    <div>
+                        <div class="card-info-type"></div>
+                        <div class="card-date"></div>
+                    </div>
+                    <h3 style="margin: 0%;">Lorem</h3>
+                    <h6 style="margin: 0%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+                    <div class="user-profile">
+                        <div class="card-user-profile"
+                            style="background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);"></div>
+                        <h5 style="margin:10px;">by lorem</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container"></div>
+                <div class="card-info">
+                    <div>
+                        <div class="card-info-type"></div>
+                        <div class="card-date"></div>
+                    </div>
+                    <h3 style="margin: 0%;">Lorem</h3>
+                    <h6 style="margin: 0%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+                    <div class="user-profile">
+                        <div class="card-user-profile"
+                            style="background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);"></div>
+                        <h5 style="margin:10px;">by lorem</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container"></div>
+                <div class="card-info">
+                    <div>
+                        <div class="card-info-type"></div>
+                        <div class="card-date"></div>
+                    </div>
+                    <h3 style="margin: 0%;">Lorem</h3>
+                    <h6 style="margin: 0%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+                    <div class="user-profile">
+                        <div class="card-user-profile"
+                            style="background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);"></div>
+                        <h5 style="margin:10px;">by lorem</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </section>
+
+    <!-- Sibling gallery section with images -->
     <div class="sibling-gallery">
-        <ul class="ulresult" >
+        <ul class="ulresult">
+            <!-- List items with image links -->
+            <!-- Repeat for each image -->
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3MQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3MQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1551978429-3dbfed5cacc9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3NA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1551978429-3dbfed5cacc9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3NA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3Nw&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1472396961693-142e6e269027?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3Nw&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3OA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3OA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1494625927555-6ec4433b1571?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1494625927555-6ec4433b1571?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4Mw&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4Mw&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1600240644455-3edc55c375fe?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4NQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1600240644455-3edc55c375fe?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4NQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1435732960391-11053ee5e6b6?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4OQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1435732960391-11053ee5e6b6?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4OQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1518717202715-9fa9d099f58a?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5MQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1518717202715-9fa9d099f58a?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5MQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1484318571209-661cf29a69c3?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5NA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1484318571209-661cf29a69c3?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5NA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5Ng&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5Ng&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
             <li class="result">
-              <a href="#"><img class="sibling" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5OQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
+                <a href="#"><img class="sibling"
+                        src="https://images.unsplash.com/photo-1501854140801-50d01698950b?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5OQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500"
+                        width="500" height="500" alt=""></a>
             </li>
-          </ul>
+        </ul>
     </div>
 
-
-
+    <!-- Footer section with aurora lights and social media links -->
     <footer>
-
         <div id="lightings">
+            <!-- Aurora lights with nested divs -->
             <div class="aurora" id="one">
                 <div class="aurora" id="two">
                     <div class="aurora" id="three">
                         <div class="aurora" id="four">
                             <div class="aurora" id="five">
-
                             </div>
                         </div>
                     </div>
@@ -226,25 +271,26 @@
             </div>
         </div>
 
-
+        <!-- Footer columns with social media links -->
         <div class="footer-col">
             <div class='social-media'>
                 <h4 id="follow">follow us</h4>
                 <hr>
+                <!-- Social media icons with links -->
                 <div class="social-links">
-                    <a href="#"><img class='insta icon' src="src/Media/instagram.svg" alt="Instagram"></i></a>
-                    <a href="#"><img class='X icon' src="src/Media/x.svg" alt="X"></i></a>
-                    <a href="#"><img class='email icon' src="src/Media/gmail.svg" alt="gmail"></i></a>
-                    <a href="#"><img class='linkin icon' src="src/Media/linkedin.svg" alt="linkedin"></i></a>
+                    <a href="#"><img class='insta icon' src="src/Media/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img class='X icon' src="src/Media/x.svg" alt="X"></a>
+                    <a href="#"><img class='email icon' src="src/Media/gmail.svg" alt="gmail"></a>
+                    <a href="#"><img class='linkin icon' src="src/Media/linkedin.svg" alt="linkedin"></a>
                 </div>
             </div>
-
         </div>
+
+        <!-- Copyright text with the current year and designer information -->
         <div class="footer-copyright-text">
             <a class="footer-copyright-link" href="#" target="_self"> ©2024. | Designed By: Aryan Raj | All rights
                 reserved. </a>
         </div>
-
     </footer>
 
 </body>

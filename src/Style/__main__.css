@@ -1,5 +1,6 @@
 @import url(_header.css);
 @import url(_footer.css);
+@import url(_nav.css);
 
 body {
   position: relative;
@@ -20,4 +21,18 @@ body::before {
   background-size: cover;
   filter: brightness(50%); /* Adjust the value as needed (0% to 100%) */
   z-index: -1;
+}
+
+/* Section Styles */
+.page-section {
+  width: 100%;
+  margin: 25px auto;
+  padding: 20px;
+  color: #ffffff;
+  max-width: 90%;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  box-sizing: border-box;
+  /* background-color: #252525c0; */
+  border-radius: 1em;
 }
