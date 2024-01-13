@@ -67,7 +67,7 @@ function createGrid() {
 function createGallerySections() {
     var mainContainer = document.getElementById('gallerysubsection');
 
-    for (var i = 1; i <= 9; i++) {
+    for (var i = 1; i <= 8; i++) {
         var gallerySection = document.createElement('section');
         gallerySection.className = 'Gallery';
         gallerySection.id = 'gallery-' + i;
