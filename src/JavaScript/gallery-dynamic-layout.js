@@ -104,7 +104,8 @@ function createGallerySections() {
         galleryImageSet.className = 'Gallery-images';
 
         for (var k = 1; k <= 9; k++) {
-            var galleryImage = document.createElement('div');                galleryImage.className = 'Gallery-image';
+            var galleryImage = document.createElement('div');                
+            galleryImage.className = 'Gallery-image';
             galleryImageSet.appendChild(galleryImage);
         }
 

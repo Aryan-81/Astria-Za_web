@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/__main__.css">
+    <link rel="stylesheet" href="Style/_contact-box.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="JavaScript/header.js" defer></script>
     <title>Astria-Za</title>
 </head>
+
 <body>
     <nav>
         <!-- Logo with a link to the home page -->
@@ -31,7 +34,7 @@
     </nav>
 
     <header>
-        <div class="headline" style="height: 40vh;">
+        <div class="headline" style="height: 50vh;">
             <div class="inner">
                 <h1>About</h1>
                 <h3>Astria-Za</h3>
@@ -43,26 +46,80 @@
         <h2>About Us</h2>
         <p>Welcome to the IIT Jammu Astronomy Club, where the fascination with the cosmos meets community! 🌠</p>
         <h2>Our Mission</h2>
-        <p>Embark on a cosmic journey with the [Your College] Astronomy Club, where our mission goes beyond the confines of our campus. Established [mention the year], our club stands as a celestial haven for students driven by a shared passion for the mysteries of the universe.</p>
-        <p>At the core of our mission is the commitment to ignite curiosity and foster a deep appreciation for the wonders of astronomy. We believe in the transformative power of curiosity, inspiring students to question, explore, and engage with the cosmos in ways that transcend the boundaries of the classroom.</p>
-        <p>More than just a club, we are a thriving cosmic community that welcomes students from all walks of life. From astrophysics enthusiasts to those taking their first steps into the realm of stargazing, our community is a diverse tapestry of individuals united by a common fascination with the celestial wonders that surround us.</p>
-        <p>As ambassadors of scientific exploration, we aim to provide a platform for students to delve into the realms of astronomy and space sciences. Through engaging discussions, hands-on workshops, and captivating events, we empower our members to deepen their understanding of the cosmos and encourage a lifelong pursuit of knowledge.</p>
-        <p>In a world that often moves at the speed of light, we offer a sanctuary for students to slow down, look up, and connect with the cosmos. Whether through stargazing events, astronomical expeditions, or immersive educational initiatives, we provide opportunities for our members to forge a profound connection with the vastness of the night sky.</p>
-        <p>Beyond our current pursuits, we are dedicated to nurturing the astronomers of tomorrow. By providing a supportive environment, educational resources, and collaborative opportunities, we aim to empower our members to contribute meaningfully to the field of astronomy and space exploration.</p>
-        <p>Join us on this cosmic odyssey as we navigate the galaxies together, fueled by curiosity, community, and a shared love for the mysteries that unfold in the night sky.</p>
+        <p>Embark on a cosmic journey with the [Your College] Astronomy Club, where our mission goes beyond the confines
+            of our campus. Established [mention the year], our club stands as a celestial haven for students driven by a
+            shared passion for the mysteries of the universe.</p>
+        <p>At the core of our mission is the commitment to ignite curiosity and foster a deep appreciation for the
+            wonders of astronomy. We believe in the transformative power of curiosity, inspiring students to question,
+            explore, and engage with the cosmos in ways that transcend the boundaries of the classroom.</p>
+        <p>More than just a club, we are a thriving cosmic community that welcomes students from all walks of life. From
+            astrophysics enthusiasts to those taking their first steps into the realm of stargazing, our community is a
+            diverse tapestry of individuals united by a common fascination with the celestial wonders that surround us.
+        </p>
+        <p>As ambassadors of scientific exploration, we aim to provide a platform for students to delve into the realms
+            of astronomy and space sciences. Through engaging discussions, hands-on workshops, and captivating events,
+            we empower our members to deepen their understanding of the cosmos and encourage a lifelong pursuit of
+            knowledge.</p>
+        <p>In a world that often moves at the speed of light, we offer a sanctuary for students to slow down, look up,
+            and connect with the cosmos. Whether through stargazing events, astronomical expeditions, or immersive
+            educational initiatives, we provide opportunities for our members to forge a profound connection with the
+            vastness of the night sky.</p>
+        <p>Beyond our current pursuits, we are dedicated to nurturing the astronomers of tomorrow. By providing a
+            supportive environment, educational resources, and collaborative opportunities, we aim to empower our
+            members to contribute meaningfully to the field of astronomy and space exploration.</p>
+        <p>Join us on this cosmic odyssey as we navigate the galaxies together, fueled by curiosity, community, and a
+            shared love for the mysteries that unfold in the night sky.</p>
 
         <h2>What We DO</h2>
-        <p>Stargazing Events: Join us for captivating nights under the stars as we explore the night sky through telescopes and share insights into the cosmos. </p>
-        <p> Educational Initiatives: Engage in enriching discussions, workshops, and events that deepen your understanding of astronomy and space exploration.</p>
-        <p> Community Building: Connect with fellow space enthusiasts, form lasting friendships, and collaborate on projects that celebrate the wonders of the universe.</p>
+        <p>Stargazing Events: Join us for captivating nights under the stars as we explore the night sky through
+            telescopes and share insights into the cosmos. </p>
+        <p> Educational Initiatives: Engage in enriching discussions, workshops, and events that deepen your
+            understanding of astronomy and space exploration.</p>
+        <p> Community Building: Connect with fellow space enthusiasts, form lasting friendships, and collaborate on
+            projects that celebrate the wonders of the universe.</p>
         <h2>Meet Our Team</h2>
-        <p>Curious about the faces behind the telescopes? Meet the passionate individuals who drive our cosmic exploration <a href="team.html">Team</a>. Get to know our team members,
-             their backgrounds, and what inspires their love for astronomy.</p>
-        
+        <p>Curious about the faces behind the telescopes? Meet the passionate individuals who drive our cosmic
+            exploration <a href="team.html">Team</a>. Get to know our team members,
+            their backgrounds, and what inspires their love for astronomy.</p>
+
     </section>
 
-    <section class="page-section">Sponsorship related</section>
-    <section class="page-section">message box</section>
+    <!-- <section class="page-section">Sponsorship related</section> -->
+
+    <section id="contact-box">
+        <!-- <small style="color: azure;">Enter message (optional) and click button "Send"</small> -->
+        <div class="warraper">
+            <div class="letter">
+                <div class="upper-side">
+                    <h1>Contact us</h1>
+                    <p>
+                        <textarea placeholder="Your message"></textarea>
+                    </p>
+                </div>
+                <div class="lowwer-side">
+                    <p>
+                        <input type="text" placeholder="Your name">
+                    </p>
+                    <p>
+                        <input type="email" placeholder="Your email">
+                    </p>
+                    <p>
+                        <button id="sendLetter">Send</button>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="envelope front centered"></div>
+            <div class="back centered"></div>
+            
+            
+            <script>
+                function addClass() {document.getElementById("contact-box").classList.add("sent");}
+                sendLetter.addEventListener("click", addClass);
+            </script>
+        </div>
+
+    </section>
 
 
 
