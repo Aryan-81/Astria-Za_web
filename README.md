@@ -13,8 +13,7 @@ Welcome to the collaborative development project for the College Astronomy Club 
 
 ### - How to Contribute:
  - Fork the GitHub repository and solve the issue or mention a issue or feature you want to add
- - Join WhatsApp Group for more info
- - If any issue regarding this will arrise then you can ask whatsapp group
+ - If any issue regarding this will arrise then you can ask.
 
 
 ### - Current Focus Areas:
