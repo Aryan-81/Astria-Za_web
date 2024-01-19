@@ -40,7 +40,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 10vh;
+  font-size: 20vh;
   line-height: 1.2em;
   font-family: 'Source Sans Pro', sans-serif;
   animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
@@ -53,6 +53,32 @@
   font-style: italic;
   font-family: serif;
   margin: 0 10% 0% 10%;
+}
+
+.inner .container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.inner .text {
+  font-weight: 200;
+  font-family:cursive;
+  font-size: 5vh;
+  color: #63fff7;
+}
+.inner .dud {
+  color: #757575;
+}
+
+@media (max-width: 700px) {
+  .headline h1 {
+    font-size: 20vw;
+  }
+  .inner .text{
+    font-size: 6vw;
+  }
+
 }
 
 /* Keyframe Animations */
