@@ -75,11 +75,11 @@ footer{
 
 @media (max-width: 421.6px) {
     .social-links .icon{
-        margin: 1vh 5vh 1vh 5vh ;
+        margin: 1vh 2vh 1vh 2vh ;
     }
     .social-links{
         flex-wrap: nowrap;
-        max-width: 10vh;
+        max-width: 5vh;
     }
 }
 
