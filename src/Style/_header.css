@@ -34,6 +34,12 @@
   animation: fade-in 0.75s 0.25s ease-in forwards;
 }
 
+.inner h3{
+  margin-inline-end: 4px;
+  font-size: 4vh;
+  margin: 15vh 0 0 0;
+}
+
 .inner h1 {
   margin: 0;
   background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
@@ -77,6 +83,9 @@
   }
   .inner .text{
     font-size: 6vw;
+  }
+  .inner h3{
+    font-size: 4vw;
   }
 
 }

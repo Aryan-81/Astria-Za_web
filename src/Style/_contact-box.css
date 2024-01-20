@@ -1,5 +1,5 @@
 #contact-box{
-  padding-top: 1em;
+  padding-top: 0px;
   padding-bottom: 50px;
 }
 
@@ -24,9 +24,8 @@
   height: 15em;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(85, 72, 58);
+  background-color: color-mix(in srgb-linear, rgba(42, 16, 55, 0.458) 30%, rgb(31, 46, 48) 99%);
   border-radius: 2vh 2vh 0 0;
-
 }
 
 .lowwer-side {
@@ -34,8 +33,12 @@
   height: 15em;
   flex-direction: column;
   align-items: flex-end;
-  background-color: rgb(85, 72, 58);
+  background-color: color-mix(in srgb-linear, rgba(42, 16, 55, 0.458) 30%, rgb(31, 46, 48) 99%);
   border-radius: 0 0 2vh 2vh;
+}
+
+.upper-side h1{
+  color: rgba(117, 255, 255, 0.884);
 }
 
 .letter textarea,
@@ -47,12 +50,11 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
 }
 
 .letter textarea,
 .letter input {
-  color: #347adc;
+  color: #d9b3f9;
   background-color: transparent;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='24'><rect fill='rgb(229, 225, 187)' x='0' y='23' width='10' height='1'/></svg>");
 }
@@ -84,9 +86,10 @@
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='24'><rect fill='rgba(240, 132, 114, 0.5)' x='0' y='23' width='10' height='1'/></svg>");
 }
 
+textarea::placeholder,
 input::placeholder,
 textarea::placeholder {
-  color: #242424;
+  color: #9cfff29f;
 }
 
 .letter input[type=text]:focus,
@@ -109,7 +112,7 @@ textarea::placeholder {
 .letter button:hover,
 .letter button :focus {
   outline: none;
-  background-color: rgb(61, 44, 44);
+  background-color: rgba(170, 42, 220, 0.7);
 
 }
 
