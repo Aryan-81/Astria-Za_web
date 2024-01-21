@@ -58,7 +58,7 @@ footer{
     margin: 1vh 3vh 1vh 3vh ;
     transition: 0.4s;
 }
-.icon:hover{
+footer .icon:hover{
     height: 7vh;
 }
 

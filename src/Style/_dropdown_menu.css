@@ -2,7 +2,7 @@
     display:flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: row;	
 }
 
 .yearheading #year{
@@ -11,7 +11,7 @@
 
 .yearheading #year_list{
     position: relative;
-    
+    z-index: 1000;	
 }
 
 
@@ -64,7 +64,7 @@
   font-size: 14px;
 }		
 
-.yrmenu li:hover {
+.yrmenu li:hover  {
   background: #54d8d8;
 }		
 
@@ -76,8 +76,8 @@
 /* Dropdown */
 .submenu {
   position: absolute;
-  width: 200px;
-  left: 50%; margin-left: -100px;
+  width: 105px;
+  left: 50%; margin-left: -90px;
   transform: skewX(-15deg);
   transform-origin: left top;
 }
@@ -89,7 +89,7 @@
 }						
 
 .submenu > li > a {
-  padding: 1em 2em;			
+  padding: 1em 1em;			
 }
 
 .submenu > li::after {
@@ -140,16 +140,16 @@
   transition: .2s ease transform;
 }
 
-.yrmenu > li:hover .submenu,
-.yrmenu > li:hover .submenu li {
+.yrmenu > li:hover  .submenu,
+.yrmenu > li:hover  .submenu li {
   opacity: 1;
   visibility: visible;
 }		
 
-.yrmenu > li:hover .submenu li:nth-child(even){
+.yrmenu > li:hover  .submenu li:nth-child(even){
   transform: skewX(25deg) translateX(15px);			
 }
 
-.yrmenu > li:hover .submenu li:nth-child(odd){
+.yrmenu > li:hover  .submenu li:nth-child(odd){
   transform: skewX(-25deg) translateX(-15px);			
 }
