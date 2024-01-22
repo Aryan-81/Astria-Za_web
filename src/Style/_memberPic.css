@@ -17,7 +17,7 @@
   margin-top: 14vh;
   width: 50vh;
   border-radius: 50%;
-  border: 2px dotted rgb(255, 121, 121);
+  border: 2px dotted rgb(201, 121, 255);
 }
 
 .team .pic::before {
@@ -35,10 +35,6 @@
   transition: all 0.5s ease 0s;
 }
 
-.team .row:nth-child(1) .member:nth-child(1) .pic::before {
-  background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);
-}
-
 .member-info {
   position: absolute;
   color: aliceblue;
@@ -51,11 +47,10 @@
 .team .social {
   position: absolute;
   list-style: none;
-  opacity: 1;
-  z-index: 10;
-  transition: all 0.5s ease 0s;
-  top: 30%;
-  left: 19%;
+  opacity: 0;
+  z-index: 1;
+  top: 15%;
+  left: 16%;
 }
 
 
@@ -79,12 +74,21 @@
   height: 38px;
 }
 
-.team .icon:hover .pic::before{
-  filter: brightness(0.44);
+.pic:hover::before{
+  filter: brightness(0.34);
 }
-.team .pic:hover::before{
-  filter: brightness(0.44);
+.pic:hover h2{
+  color: aqua;
 }
-.team .pic:hover.icon{
-  opacity: 0;
+.pic:hover{
+  border: 2px dotted rgb(121, 210, 255);
+}
+.pic:hover  .social{
+  opacity: 1;
+}
+
+
+/* Member profile pic */
+.team .row:nth-child(1) .member:nth-child(1) .pic::before {
+  background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);
 }
