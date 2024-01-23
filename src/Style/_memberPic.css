@@ -13,9 +13,9 @@
 
 .team .pic {
   position: relative;
+  width: 50vh;
   height: 50vh;
   margin-top: 14vh;
-  width: 50vh;
   border-radius: 50%;
   border: 2px dotted rgb(201, 121, 255);
 }
@@ -33,6 +33,7 @@
   background-repeat: no-repeat;
   transform: translateY(-12vh);
   transition: all 0.5s ease 0s;
+  animation: glowAndColor 5s infinite;
 }
 
 .member-info {
@@ -50,7 +51,7 @@
   opacity: 0;
   z-index: 1;
   top: 15%;
-  left: 16%;
+  left: 10%;
 }
 
 
@@ -86,9 +87,34 @@
 .pic:hover  .social{
   opacity: 1;
 }
+@keyframes glowAndColor {
+  0%, 100% {
+    box-shadow: 0 0 10px hsl(267, 100%, 67%); /* Initial and final shadow color and size */
+  }
+  40% {
+    box-shadow: 0 0 20px hsl(288, 100%, 70%); /* Midway shadow color and size */
+  }
+  60%{
+    box-shadow: 0 0 20px hsl(306, 83%, 66%);
+  }
 
+}
+@media (max-width: 750px){
+  .team .pic {
+    width: 70vw;
+    height: 70vw;
+  }
+}
 
 /* Member profile pic */
 .team .row:nth-child(1) .member:nth-child(1) .pic::before {
+  background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);
+}
+
+
+.team .row:nth-child(2) .member:nth-child(2) .pic::before {
+  background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);
+}
+.team .row:nth-child(3) .member:nth-child(2) .pic::before {
   background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);
 }

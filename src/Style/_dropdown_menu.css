@@ -1,155 +1,97 @@
 .yearheading{
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    flex-direction: row;	
 }
 
-.yearheading #year{
-    position: relative;
+.dropdown {
+  display: block;
+  position: relative;
+  transform: translateY(20%);
+  
+  z-index: 2;
 }
 
-.yearheading #year_list{
-    position: relative;
-    z-index: 1000;	
+.dropdown > a {
+  border-radius: 2px;
+  box-shadow: 0 6px 5px -5px rgba(0,0,0,0.3);
 }
-
-
-
-/* Clearing floats */
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
+.dropdown > a::after {
+  content: "";
+  float: right;
+  margin: 15px 15px 0 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #CCC;
 }
-
-.cf:after {
-  clear: both;
-}
-
-.cf {
-  align-items: flex-end;
-}
-
-/* Mini reset, no margins, paddings or bullets */
-.yrmenu,
-.submenu {
+.dropdown ul {
+  list-style-type: none;
+  display: block;
   margin: 0;
   padding: 0;
-  list-style: none;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 6px 5px -5px rgba(0,0,0,0.3);
+  overflow: hidden;
 }
 
-/* Main level */
-.yrmenu {
-  margin: 1vh auto;
-  width: 800px;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content;	
+.dropdown .year{
+  background-image: url(/src/Media/gif_2.gif);
+  background-position: center;
+  background-size: cover;
 }
 
-.yrmenu > li {
-  background: #34495e;
-  float: left;
-  position: relative;
-  transform: skewX(15deg);
-}
-
-.yrmenu a {
+.dropdown a {
   display: block;
-  color: #fff;
-  text-transform: uppercase;
+  padding: 0 0 0 10px;
   text-decoration: none;
-  font-family: Arial, Helvetica;
-  font-size: 14px;
-}		
-
-.yrmenu li:hover  {
-  background: #54d8d8;
-}		
-
-.yrmenu > li > a {
-  transform: skewX(-15deg);
-  padding: 1em 2em;
+  line-height: 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffb395;
+  background-color: #373c3c;
+  
 }
-
-/* Dropdown */
-.submenu {
+.dropdown li {
+  height: 0;
+  overflow: hidden;
+  transition: all 500ms;
+}
+.dropdown.hover li {
+  transition-delay: 300ms;
+}
+.dropdown li:first-child a {
+  border-radius: 2px 2px 0 0;
+}
+.dropdown li:last-child a {
+  border-radius: 0 0 2px 2px;
+}
+.dropdown li:first-child a::before {
+  content: "";
+  display: block;
   position: absolute;
-  width: 105px;
-  left: 50%; margin-left: -90px;
-  transform: skewX(-15deg);
-  transform-origin: left top;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #383333;
+  margin: -10px 0 0 30px;
 }
-
-.submenu li {
-  background-color: #34495e;
-  position: relative;
-  overflow: hidden;		
-}						
-
-.submenu > li > a {
-  padding: 1em 1em;			
+.dropdown a:hover{
+  background-color: #EEE;
+  color: #666;
 }
-
-.submenu > li::after {
-  content: '';
-  position: absolute;
-  top: -125%;
-  height: 100%;
-  width: 100%;			
-  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
-}		
-
-/* Odd stuff */
-.submenu > li:nth-child(odd){
-  transform: skewX(-15deg) translateX(0);
+.dropdown > a:hover::after {
+  border-top-color: #AAA;
 }
-
-.submenu > li:nth-child(odd) > a {
-  transform: skewX(15deg);
+.dropdown li:first-child a:hover::before {
+  border-bottom-color: #EEE;
 }
-
-.submenu > li:nth-child(odd)::after {
-  right: -50%;
-  transform: skewX(-25deg) rotate(3deg);
-}				
-
-/* Even stuff */
-.submenu > li:nth-child(even){
-  transform: skewX(25deg) translateX(0);
+.dropdown.hover:hover li {          
+  height: 40px;
 }
-
-.submenu > li:nth-child(even) > a {
-  transform: skewX(-25deg);
-}
-
-.submenu > li:nth-child(even)::after {
-  left: -50%;
-  transform: skewX(15deg) rotate(3deg);
-}
-
-/* Show dropdown */
-.submenu,
-.submenu li {
-  opacity: 0;
-  visibility: hidden;			
-}
-
-.submenu li {
-  transition: .2s ease transform;
-}
-
-.yrmenu > li:hover  .submenu,
-.yrmenu > li:hover  .submenu li {
-  opacity: 1;
-  visibility: visible;
-}		
-
-.yrmenu > li:hover  .submenu li:nth-child(even){
-  transform: skewX(25deg) translateX(15px);			
-}
-
-.yrmenu > li:hover  .submenu li:nth-child(odd){
-  transform: skewX(-25deg) translateX(-15px);			
+.dropdown.hover:hover li:first-child {
+  padding-top: 15px;
 }
