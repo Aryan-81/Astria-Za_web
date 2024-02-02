@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="src/Style/_blog-card.css">
     <link rel="stylesheet" href="src/Style/_swip.css">
     <link rel="stylesheet" href="src/Style/_sibling-gallery.css">
+    <link rel="stylesheet" href="src/Style/_blog-slider.css">
 
     <!-- jQuery library for scripting -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!-- scripts  -->
-    <script src="src/JavaScript/header.js" defer></script>
-    <script src="src/JavaScript/swiper.js" defer></script>
-    <script src="src/JavaScript/text_animation.js" defer></script>
-
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="src/JavaScript/header.js" ></script>
+    <script defer src="src/JavaScript/swiper.js" ></script>
+    <script defer src="src/JavaScript/text_animation.js" ></script>
+    
     <!-- Page title -->
     <title>Astria-Za</title>
 </head>
@@ -72,35 +74,49 @@
         <h2>Upcoming Events & Announcements</h2>
         <!-- Swiper container for event cards -->
         <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <!-- Swiper slides with event cards -->
-                <div class="swiper-slide">
-                    <div class="card">
-                        <h2>Card 1</h2>
-                        <p>This is the content of Card 1.</p>
+            <div class="blog-slider">
+                <div class="blog-slider__wrp swiper-wrapper">
+                  <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+              
+                      <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card">
-                        <h2>Card 2</h2>
-                        <p>This is the content of Card 2.</p>
+                    <div class="blog-slider__content">
+                      <span class="blog-slider__code">26 December 2019</span>
+                      <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                      <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                      <a href="#" class="blog-slider__button">READ MORE</a>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card">
-                        <h2>Card 3</h2>
-                        <p>This is the content of Card 3.</p>
+                  </div>
+                  <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                      <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
                     </div>
+                    <div class="blog-slider__content">
+                      <span class="blog-slider__code">26 December 2019</span>
+                      <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                      <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                      <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                  </div>
+              
+                  <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                      <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                      <span class="blog-slider__code">26 December 2019</span>
+                      <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                      <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                      <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                  </div>
+              
                 </div>
-                <!-- Add more cards as needed -->
-            </div>
+                <div class="blog-slider__pagination"></div>
+              </div>
         </div>
-        <!-- Navigation buttons for Swiper -->
-        <div class="swiper-button">
-            <button onclick="prevSlide()"> << </button>
-            <button onclick="nextSlide()"> >> </button>
-        </div>
-    </section>
+        </section>
 
     <!-- Section for blog cards -->
     <section class="blogs page-section">
