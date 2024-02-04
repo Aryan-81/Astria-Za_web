@@ -1,7 +1,20 @@
-#home p {
+#about-content p {
+    font-size: 1.4em;
     margin: auto 5% auto 5% ;
 }
-#home h2{
+#about-content h2{
+    font-size: 1.8em;
     color: rgb(127, 255, 242);
-    margin: 4% auto 2% auto;
+    margin: 7% auto 2% auto;
 }
+
+@media screen and (max-width: 450px) {
+    #about-content p {
+        font-size: 0.86em;
+        line-height: 1.5em;;
+        margin: auto 8% auto 4% ;
+    }
+    #about-content h2 {
+        font-size: 1em;
+    }
+  }
