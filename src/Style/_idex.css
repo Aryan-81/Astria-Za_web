@@ -1,0 +1,19 @@
+.solar_system_ifram iframe {
+    margin: 0 auto;
+    display: grid;
+    width: 85%;
+    height: 50vh;
+}
+
+@media screen and (max-width: 992px) {
+    .solar_system_ifram iframe {
+        width: 95%;
+        height: 40vh;
+        
+    }
+}
+
+.solar_system_ifram{
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+}
