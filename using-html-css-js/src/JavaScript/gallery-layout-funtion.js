@@ -18,4 +18,4 @@ function openGallery(id) {
     if (cardActv) {
       cardActv.classList.remove('Card--active');
     }
-  }
+}
