@@ -110,11 +110,56 @@
 .team .row:nth-child(1) .member:nth-child(1) .pic::before {
   background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);
 }
-
-
-.team .row:nth-child(2) .member:nth-child(2) .pic::before {
-  background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);
+.team .row:nth-child(1) .member:nth-child(2) .pic::before {
+  background-image: url(../Media/Team_members/2023/Vedika\ Aggarwal.jpg);
 }
+
+.team .row:nth-child(2) .member:nth-child(1) .pic::before {
+  background-image: url(../Media/Team_members/2023/Rachit\ Goel.jpg);
+}
+.team .row:nth-child(2) .member:nth-child(2) .pic::before {
+  background-image: url(../Media/Team_members/2023/);
+}
+
+.team .row:nth-child(3) .member:nth-child(1) .pic::before {
+  background-image: url(../Media/Team_members/2023/);
+}
+
 .team .row:nth-child(3) .member:nth-child(2) .pic::before {
-  background-image: url(https://source.unsplash.com/Qm_n6aoYzDs);
+  background-image: url(../Media/Team_members/2023/Bhavuk\ Goyal.jpg);
+}
+
+.team .row:nth-child(4) .member:nth-child(1) .pic::before {
+  background-image: url(../Media/Team_members/2023/Aryan.jpg);
+}
+.team .row:nth-child(4) .member:nth-child(2) .pic::before {
+  background-image: url(../Media/Team_members/2023/);
+}
+
+.team .row:nth-child(5) .member:nth-child(1) .pic::before {
+  background-image: url(../Media/Team_members/2023/Khushi\ Verma.jpg);
+}
+.team .row:nth-child(5) .member:nth-child(2) .pic::before {
+  background-image: url(../Media/Team_members/2023/Kritika\ Patidar.jpg);
+}
+
+.team .row:nth-child(5) .member:nth-child(1) .pic::before {
+  background-image: url(../Media/Team_members/2023/Khushi\ Verma.jpg);
+}
+.team .row:nth-child(5) .member:nth-child(2) .pic::before {
+  background-image: url(../Media/Team_members/2023/Kritika\ Patidar.jpg);
+}
+
+.team .row:nth-child(6) .member:nth-child(1) .pic::before {
+  background-image: url(../Media/Team_members/2023/Eric.jpg);
+}
+.team .row:nth-child(6) .member:nth-child(2) .pic::before {
+  background-image: url(../Media/Team_members/2023/Aaditya\ Sinha.jpg);
+}
+
+.team .row:nth-child(7) .member:nth-child(1) .pic::before {
+  background-image: url(../Media/Team_members/2023/);
+}
+.team .row:nth-child(7) .member:nth-child(2) .pic::before {
+  background-image: url(../Media/Team_members/2023/Harshdeep\ Singh.jpg);
 }
